@@ -1,18 +1,17 @@
 class Vampire
-  attr_reader :name, :pet, :drinking
+  attr_reader :name, :pet, :is_thirsty
   
-  def initialize(name, pet = "bat")
+  def initialize(name, pet="bat", is_thirsty=true)
     @name = name
     @pet = pet
+    @is_thirsty = is_thirsty
   end
 
   def thirsty?
-    thirsty = true
-    thirsty = false if drinking == true
-    thirsty
+    is_thirsty
   end
 
   def drink
-    @drinking = true
+    @is_thirsty = false
   end
 end
