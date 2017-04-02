@@ -10,17 +10,17 @@ class BagTest < Minitest::Test
   end
 
   def test_count_the_candies_in_an_empty_bag
-    skip
+    # skip
     assert_equal 0, Bag.new.count
   end
 
   def test_empty_bag_has_no_candies
-    skip
+    # skip
     assert_equal [], Bag.new.candies
   end
 
   def test_put_candy_in_the_bag
-    skip
+    # skip
     bag = Bag.new
     candy = Candy.new("Sour frogs")
     bag << candy
